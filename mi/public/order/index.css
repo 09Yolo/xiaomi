@@ -1,0 +1,415 @@
+input{outline: none;border: 0;}
+body{
+	 background: #f4f4f4; 
+}
+.page{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.page-container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+}
+
+.background-img img {
+	width: 100%;
+	height: 45.333333vw;
+	position: absolute;
+	z-index: -1;
+}
+
+.page-header {
+	width: 100%;
+	height: 23.466667vw;
+	display: flex;
+	flex-shrink: 0;
+	flex-direction: row;
+	align-items: center;
+	z-index: 2;
+}
+
+.page-content {
+	flex-grow: 1;
+	/* background: #f4f4f4; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.page-footer {
+	width: 100%;
+	height: 14.666667vw;
+	flex-shrink: 0;
+	background: #ffff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 5;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+.icon-left-arrow {
+	color: #fff;
+	font-size: 20px !important;
+	margin-left: 4vw;
+}
+
+span.head-cart {
+	margin-left: 32vw;
+	color: #fff;
+	font-size: 20px;
+}
+
+.receiving-information {
+	width: 94.666667vw;
+	height: 21.866667vw;
+	background-color: #fff;
+	border-radius: 10px;
+	z-index: 2;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.receiving-left {
+	margin-left: 10px;
+}
+
+.receiving-right {
+	margin-right: 10px;
+}
+
+.consignee-information {
+	display: flex;
+	flex-direction: row;
+	font-size: 16px;
+	color: #333;
+}
+
+p.phone {
+	margin-left: 10px;
+}
+
+.consignee-address {
+	font-size: 13px;
+}
+
+.totalprice {
+	margin-left: 10px;
+}
+
+
+span.total {
+	font-size: 13px;
+	display: inline-block;
+}
+
+span.total b,
+span.total .all-price {
+	color: red;
+	font-size: 16px;
+}
+
+p.exempt {
+	font-size: 13px;
+}
+
+span.total .all-price {
+	display: inline-block;
+}
+
+.settlement {
+	width: 25.6vw;
+	height: 10.133333vw;
+	background-color: rgb(240, 78, 46);
+	border-radius: 20px;
+	margin-right: 10px;
+}
+
+.settlement p {
+	color: #fff;
+	text-align: center;
+	line-height: 10.133333vw;
+}
+
+.order-wrap {
+	width: 94.666667vw;
+	background-color: #fff;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.list-top {
+	width: 100%;
+	height: 11.733333vw;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.list-top span {
+	margin-left: 10px;
+}
+
+span.mi-word {
+	font-size: 14px;
+}
+
+span.mi img {
+	width: 6.4vw;
+	height: 6.4vw;
+}
+.goods-wrap{
+	display: flex;
+	flex-direction: column;
+}
+.list-cont {
+	width: 100%;
+	height: 30.4vw;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.list-top span {
+	font-size: 14px;
+	margin-left: 15px;
+}
+
+.list-top p {
+	font-size: 11px;
+	margin-right: 15px;
+}
+
+.cont-img {
+	background-color: #EDEDED;
+	margin-left: 15px;
+}
+
+.cont-img img {
+	width: 22.933333vw;
+	height: 22.933333vw;
+}
+
+.cont-right {
+	width: 58.133333vw;
+	height: 22.933333vw;
+	margin-left: 5px;
+}
+
+span.specialOffer {
+	color: red;
+	font-size: 11px;
+	padding: 2px;
+	border: 1px solid red;
+	border-radius: 8px;
+	float: left;
+}
+
+p.shop-name {
+	font-size: 14px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.price-wrap {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+span.shop-price {
+	color: red;
+	font-size: 10px;
+	display: flex;
+	align-items: center;
+}
+
+p.price {
+	font-size: 14px;
+}
+
+span.shop-number {
+	font-size: 12px;
+}
+
+p.num-shop {
+	float: left;
+}
+
+span.return-goods {
+	color: rgb(191, 17, 17);
+	font-size: 10px;
+}
+.order-wrap-bottom{
+	width:94.666667vw;
+	height: 22.4vw;
+}
+.invoice{
+	width:94.666667vw;
+	height: 11.2vw;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.invoice p{
+	margin-left: 15px;
+	font-size: 14px;
+	margin-right: 15px;
+}
+.leavingMessage{
+	width:94.666667vw;
+	height: 11.2vw;
+	display: flex;
+	align-items: center;
+}
+.leavingMessage label{
+	font-size: 14px;
+	margin-left: 15px;
+}
+.leavingMessage input{
+	font-size: 12px;
+	color: rgb(153, 153, 153);
+	width: 70vw;
+	margin-left: 10px;
+}
+li.wrap-list{
+	width:100%;
+	height: 11.2vw;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+li.wrap-list span{
+	font-size: 14px;
+	margin-left: 15px;
+	margin-right: 15px;
+	color: #333;
+}
+.wrap-list span.reduce-money{
+	color: red;
+}
+.cover{
+	width: 100%;
+	height: 178vw;
+	background: rgba(0,0,0,.5);
+	display: none;
+	position: absolute;
+	top: 100%;
+	z-index: 6;
+}
+.popup{
+	width: 100%;
+	height: 107vw;
+	background-color: #fff;
+	border-radius: 20px 20px 0 0;
+	position: absolute;
+	opacity: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.popup-head{
+	width: 100%;
+	height: 15.466667vw;
+	border-radius: 20px 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content:flex-end;
+}
+span.choice-address{
+	color: #333;
+	font-size: 14px;
+	margin-right: 34.666667vw;
+}
+span.close-img img{
+	width: 5.333333vw;
+	height: 5.333333vw;
+	margin-right: 4vw;
+}
+.popup-content{
+	flex: 1;
+}
+.content-address{
+	width: 100%;
+	height: 14.992504vh;
+	background: #fff;
+	margin-top: 10px;
+	border-radius: 10px;
+	flex: 1;
+}
+.infor-address ul{
+	width: 88.533333vw;
+	display: flex;
+	justify-content: space-between;
+}
+.infor-address ul li{
+	font-size: 16px;
+	margin-left: 4vw;
+}
+li.address-name{
+	flex: 1;
+}
+.address-detailed{
+	font-size: 14px;
+	margin-top: 4vw;
+	margin-left: 13vw;
+}
+.img-modify img{
+	width: 4.761905vw;
+	height: 2.548726vh;
+	float: right;
+	margin-top: -20vw;
+	margin-right: 10px;
+}
+
+.content-input p{
+	font-size: 14px;
+	color: tomato;
+}
+.default-address{
+	width: 25px;
+	height: 15px;
+	border: 1px solid #B4731F;
+	color: #B4731F;
+	font-size: 12px;
+	text-align: center;
+	display: inline-block;
+}
+
+.address-select{
+	width: 5vw;
+	height:5vw;
+}
+.add-address {
+	padding: 3vw;
+	padding-left: 16vw;
+	padding-right: 16vw;
+	border-radius: 4vw;
+	background-color: red;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.add-address a {
+	color: #fff;
+	font-size: 16px;
+}

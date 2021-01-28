@@ -1,0 +1,134 @@
+input,
+button {
+	outline: none;
+	border: 0;
+}
+
+.page-container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.page-header {
+	width: 100%;
+	height: 12vw;
+	background: #fff;
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.page-content {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	background: #F2F2F2;
+}
+
+.icon-left-arrow {
+	font-size: 32px !important;
+}
+
+.search-input {
+	width: 72vw;
+	height: 8vw;
+	background: #EDEDED;
+	border-radius: 20px;
+	padding-left: 5px;
+}
+
+.icon-list1, .icon-list2{
+	font-size: 24px !important;
+	color: #444;
+	display: none;
+}
+.icon-list1.show, .icon-list2.show{
+	display: block;
+}
+.content-head{
+	width: 100%;
+	height:11.2vw;
+	background: #fff;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+.icon-asc,.icon-desc{
+	font-size:24px !important;
+}
+.sort p{
+	font-size: 14px;
+	float: left;
+}
+.sort-sty{color: rgb(180, 115, 31);}
+.icon-screen{
+	font-size: 14px !important;
+}
+.icon-asc, .icon-desc{
+	display: none;
+}
+.icon-asc.sort-show, .icon-desc.sort-show{
+	display: block;
+}
+
+.list-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.shop-information{
+	width: 100%;
+	height: 38vw;
+	background: #fff;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.shop-right{
+	margin-right: 4vw;
+}
+.shop-right p{
+	margin-bottom: 5px;
+}
+.shop-name{
+	font-size: 14px;
+	color: rgb(51,51,51);
+}
+.shop-highlights{
+	font-size: 11px;
+	color: rgb(136,136,136);
+}
+.shop-price{
+	color: #fa4f08;
+	font-size: 17px;
+}
+.shop-price span{
+	font-size: 12px;
+}
+.shop-discuss {
+	color: #888;
+	font-size: 10px;
+}
+
+.shop-infor{
+	width: 45.6vw;
+	height: 87.466667vw;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	border-radius: 10px;
+	margin-top: 10px;
+}
+ .img-shop img{
+	width: 45.6vw;
+	height: 45.6vw;
+} 
+ .shop-below{
+	margin-left: 10px;
+}
+

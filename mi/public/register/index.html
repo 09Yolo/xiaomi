@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="short icon" href="/public/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="/public/css/reset.css"/>
+		<link rel="stylesheet" href="/public/Validform/Validform_v5.3.2.css">
+		<link rel="stylesheet" type="text/css" href="/public/layer_mobile/layer.css"/>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<title>注册</title>
+	</head>
+	<body>
+		<div class="page-container">
+			<h1>欢迎注册小米账号</h1>
+			<div class="reg-body">
+				<form action="" class="demo">
+					
+					<div>
+						<input type="text"  class="userName gray" value="请输入用户名" tip="请输入用户名" name="name" datatype="username" nullmsg="用户名不能为空" errormsg="用户名长度3-20" sucmsg="用户名通过" altercss="gray"/>
+					</div>
+					<div></div>
+					<div>
+						<input type="text" name="phone" class="phone gray" value="请输入手机号" tip="请输入手机号" datatype="m" nullmsg="手机号不能为空" errormsg="请输入正确手机号" sucmsg="手机号验证通过" altercss="gray">
+					</div>
+					<div></div>
+					<div>
+						<input type="password" placeholder="请输入密码" class="password gray"  tip="请输入密码" name="pwd" datatype="s6-20" nullmsg="密码不能为空" errormsg="密码至少6个字符" sucmsg="密码验证通过" altercss="gray"/>
+					</div>
+					<div></div> 
+					<div>
+						<input type="password" placeholder="请再次输入密码" class="password gray" tip="请再次输入密码" recheck="pwd" datatype="s6-20" nullmsg="密码不能为空" errormsg="两次密码不一致" sucmsg="密码验证通过" altercss="gray"/>
+					</div>
+					<div></div>
+				</form>
+                <button class="btn-register">立即注册</button>
+			    <p class="login">返回登录</p>
+			</div>
+		</div>
+		<script src="/public/js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/public/Validform/Validform_v5.3.2.js"></script>
+		<script src="/public/layer_mobile/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="index.js"></script>
+	</body>
+</html>

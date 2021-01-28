@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../public/layer_mobile/layer.css" />
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<link rel="stylesheet" type="text/css" href="../public/address%20level/regions_picker_m.css" />
+		<link rel="stylesheet" type="text/css" href="../public/swiper/swiper-bundle.min.css" />
+		<link rel="stylesheet" type="text/css" href="../public/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../public/fonts/iconfont.css" />
+
+		<title></title>
+	</head>
+	<body>
+		<div class="page-container">
+			<div class="page-header">
+				<div class="back">
+					<a href="/list/index.html">
+						<i class="iconfont icon-left-back"></i>
+					</a>
+				</div>
+				<ul class="head-class">
+					<li>商品</li>
+					<li>评价</li>
+					<li>详情</li>
+					<li>推荐</li>
+				</ul>
+				<div class="back">
+					<i class="iconfont icon-more"></i>
+				</div>
+			</div>
+			<div class="page-content">
+				<!-- Swiper -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<!-- <div class="swiper-slide">
+							<img src="">
+						</div> -->
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<div class="content-seckill">
+					<div class="seckill-box">
+						<span>有品<br />秒杀</span>
+					</div>
+					<span class="rmb">￥<b class="price"></b></span>
+					<div class="count down">
+						<div id="remainSeconds" style="display:none">3600</div>
+						<p>据结束还剩:</p><span id="remainTime" style="color:#fff"></span>
+					</div>
+				</div>
+				<div class="information-goods">
+					<p class="goods-name"></p>
+					<p class="goods-Highlights"></p>
+				</div>
+				<div class="empty"></div>
+				<ul class="goods-trem">
+					<li class="trem-sale">促销</li>
+					<li class="trem-in">
+						<span>有品秒杀</span>商品限购20件,超出限购数量不可购买
+					</li>
+					<li><i class="iconfont icon-right-arrow"></i></li>
+				</ul>
+				<ul class="goods-trem ">
+					<li class="trem-sale ">分期</li>
+					<li class="trem-in">
+						可选3/6/12期
+					</li>
+					<li><i class="iconfont icon-right-arrow"></i></li>
+				</ul>
+				<div class="empty"></div>
+				<ul class="goods-trem ">
+					<li class="trem-sale ">已选</li>
+					<li class="trem-in">
+						1件
+					</li>
+					<li><i class="iconfont icon-right-arrow"></i></li>
+				</ul>
+				<ul class="goods-trem ">
+					<li class="trem-sale ">送至</li>
+					<li class="trem-in">
+						<input type="text" class="regions-picker" value="" />
+					</li>
+					<li><i class="iconfont icon-right-arrow"></i></li>
+				</ul>
+				<ul class="goods-trem2 ">
+					<li>
+						<img src="correct.png">满99包邮
+					</li>
+					<li>
+						<img src="correct.png">小米自营
+					</li>
+					<li>
+						<img src="correct.png">7天无理由
+					</li>
+				</ul>
+				<ul class="goods-trem ">
+					<li class="trem-sale sale-">销量<span class="sale"></span></li>
+					<li class="trem-rate">
+						评价<span class="rate"></span>
+					</li>
+					<li><i class="iconfont icon-right-arrow"></i></li>
+				</ul>
+				<ul class="commidty-dea">
+					<li>商品详情</li>
+					<li style="color: #333;">参数</li>
+				</ul>
+				<span class="dea-img"></span>
+
+			</div>
+			<div class="page-footer">
+				<div class="back-top">
+					<i class="iconfont icon-back-top"></i>
+				</div>
+				<ul class="mi-wrap">
+					<li class="img-mi">
+						<img src="m.png">
+					</li>
+					<li class="word-mi">小米</li>
+				</ul>
+				<ul class="mi-wrap cart-skip">
+					<li class="img-mi">
+						<i class="iconfont icon-shopcart"></i>
+						<span class="piece-number">0</span>
+					</li>
+					<li class="word-mi">购物车
+					</li>
+				</ul>
+				<div class="buy-wrap">
+					<div class="jion-cart">加入购物车</div>
+					<div class="redy-buy">立即购买</div>
+				</div>
+			</div>
+			<script src="../public/layer_mobile/layer.js" type="text/javascript" charset="utf-8"></script>
+			<script src="../public/js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+			<script src="../public/address%20level/regions.js" type="text/javascript" charset="utf-8"></script>
+			<script src="../public/address%20level/regions_picker_m.js" type="text/javascript" charset="utf-8"></script>
+			<script src="../public/swiper/swiper-bundle.min.js" type="text/javascript" charset="utf-8"></script>
+			<script src="index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

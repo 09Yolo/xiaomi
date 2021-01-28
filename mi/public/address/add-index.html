@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="/public/Validform/Validform_v5.3.2.css">
+		<link rel="stylesheet" type="text/css" href="../public/layer_mobile/layer.css"/>
+		<link rel="stylesheet" type="text/css" href="./index.css"/>
+		<link rel="stylesheet" type="text/css" href="../public/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../public/address%20level/regions_picker_m.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div class="page-container">
+			<div class="page-header">
+				<div class="arrow-left">
+					<a href="/address/index.html"><img src="./img/箭头.png" ></a>
+				</div>
+				<div class="header-address">
+					<span>新增地址</span>
+				</div>
+			</div>
+			<div class="add-content">
+				<form action="" class="demo">
+				<div class="content-input">
+					<!-- <label>收货姓名</label> -->
+					<input type="text" id="name" class="userName gray" value="请输入收货人姓名" tip="请输入收货人姓名" name="name" datatype="username" nullmsg="收货人姓名不能为空" errormsg="用户名长度2-10" sucmsg="通过" altercss="gray"/>
+					<span class="Validform_checktip"></span>
+				</div>
+				<div class="content-input">
+					<!-- <label>手机号码</label> -->
+					<input type="text" id="tel" name="phone" class="phone gray" value="请输入收货人电话" tip="请输入收货人电话" datatype="m" nullmsg="手机号不能为空" errormsg="请输入正确手机号" sucmsg="手机号验证通过" altercss="gray">
+				</div>
+				<div class="content-input">
+					<!-- <label>所在地区</label> -->
+					<input type="text" id="city" name="address" class="regions-picker gray" value="请选择省/市/区/街道" tip="请选择省/市/区/街道" datatype="" nullmsg="收货地址不能为空" errormsg="请输入地址" sucmsg="地址验证通过" altercss="gray">
+				</div>
+				<div class="content-input">
+					<!-- <label>详细地址</label> -->
+					<input type="text" id="detail" name="address" class="gray" value="请输入街道地址" tip="请输入街道地址" datatype="s5-20" nullmsg="地址不能为空" errormsg="请输入地址" sucmsg="地址验证通过" altercss="gray">
+				</div>
+				</form>
+				<div class="empty"></div>
+				<div class="content-input">
+					<input type="checkbox" class="check-choice" value="" />
+					<span class="set-default show">设为默认地址</span>
+				</div>
+				<div class="preservation-wrap">
+					<div class="preservation">
+						<button class="btn-preservation">保存</button>
+					</div>
+			</div>
+			</div>
+			</div>
+			
+			<script src="/public/js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+			<script src="/public/Validform/Validform_v5.3.2.js"></script>
+			<script src="/public/layer_mobile/layer.js" type="text/javascript" charset="utf-8"></script>
+			<script src="/public/address%20level/regions.js" type="text/javascript" charset="utf-8"></script>
+			<script src="/public/address%20level/regions_picker_m.js" type="text/javascript" charset="utf-8"></script>
+			<script src="index.js" type="text/javascript" charset="utf-8"></script>
+			
+			<script type="text/javascript">
+				// 表单验证
+				$("form.demo").Validform({
+				    tiptype:3,
+					datatype: {//gets 输入框value值；obj当前正在被验证的表单元素本身（默认是jQuery对象）；curfrom当前表单整个元素本身（form）（也是jQuery对象）
+					    username: function(gets,obj,curform){
+					        var reg = /^\w{3,20}$/;
+					        if(!reg.test(gets)) return false;
+					     },
+					    m: function(gets,obj,curfrom){
+					        var reg = /^1\d{10}$/;
+					        if(!reg.test(gets)) return false;
+					        
+					    },
+					
+					}
+				})
+			</script>
+	</body>
+</html>
